@@ -1,9 +1,8 @@
-import simulation
 import matplotlib.pyplot as plt
+import numpy as np
 import paths
 
-# Run the simulation for some inputs
-data = simulation.run()
+data = np.loadtxt(paths.data / "simulation.dat")
 
 # Plot the results
 fig, ax = plt.subplots(1)
